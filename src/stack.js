@@ -5,7 +5,11 @@ let stack = [];
 
 // Lägger ett element överst i stacken
 exports.push = function (x) {
-
+    
+    // Om prompten är en tom sträng så läggs den inte till i listan
+    if (x === "") {
+        return;
+    }    
 
     stack.push(x);
 };

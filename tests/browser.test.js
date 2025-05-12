@@ -36,7 +36,8 @@ test("Display should show undefined if stack is empty when popping", async () =>
     let peek = await driver.findElement(By.id('peek'));
     await peek.click();
     
-    expect(display).toBe("undefined");
+    let display2 = await driver.findElement(By.id('top_of_stack')).getText();
+    expect(display2).toBe("undefined");
 });
 
 
