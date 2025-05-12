@@ -1,6 +1,15 @@
 const stack = require('../src/stack');
 
-
+// Mitt test 
+test("Peek on stack with only an empty string should return undefined", () => {
+    stack.push("Mikaela");
+    stack.push("");
+    stack.push("Emelie");
+    stack.pop();
+    expect(stack.peek()).toBe("Mikaela");
+    stack.pop();
+    expect(stack.peek()).toBeUndefined();
+});
 
 
 /*
