@@ -137,3 +137,5 @@ out
 
 # Dök upp på github
 .DS_store
+
+/dist/
