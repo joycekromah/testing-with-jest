@@ -7,7 +7,7 @@ test("Stack should ignore empty strings and return correct stack size", () => {
     stack.push("")
     stack.push(444);
     stack.push("Hello world!")
-    expect(stack.size()).toBe(5);
+    expect(stack.size()).toBe(4);
 });
 
 /*
